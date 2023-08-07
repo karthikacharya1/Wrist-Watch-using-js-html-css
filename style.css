@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:  border-box;
+
+}
+.container{
+    height: 100vh;
+    width:100%;
+   background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+   background-size: 300% 300%;
+     animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.strap{
+    height: 100vh;
+    width:7.5em;
+ border:1.5em solid rgb(243, 46, 46);
+    position:absolute;
+    transform: translateX(-50%);
+    left:50%;
+    background:linear-gradient(45deg,rgb(31, 232, 246),rgb(108, 96, 241));
+    background-size: 1.5em 1.5em;
+    background-position: -3.0em;
+    border-top:none;
+    border-bottom: none;
+}
+.strap:before{
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width:1.87em;
+    background-color: rgb(173, 237, 70);
+    border:0.12em solid rgb(227, 15, 139);
+    position:absolute;
+    transform: translateX(-50%);
+    left:50%;
+    border-top: none;
+    border-bottom: none;
+}
+.watch{
+    height:11.25em;
+    width:11.25em;
+    background-color: rgb(121, 236, 117);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:50%;
+    border-radius: 40%;
+    box-shadow: 0 0 0 0.12em rgb(36, 40, 251),0 0 0 0.93em rgb(21, 17, 248),0 0 0 1.06em blue;
+    background:linear-gradient(45deg,rgb(252, 43, 206),rgb(75, 247, 181),yellow);
+   background-size: 300% 300%;
+    animation: color 3s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.pin{
+    position:absolute;
+    border-radius: 50%;
+    height: 1.25em;
+    width:1em;
+    background: linear-gradient(yellow 0.31em, green 0.31em);
+    border:0.12em solid blueviolet;
+    transform: translate(-50%);
+    top:43%;
+    left:calc(50% + 7em);
+}
+.pin1{
+    position:absolute;
+    border-radius: 10px;
+    height: 1.25em;
+    width:1em;
+    background: linear-gradient(yellow 0.31em, green 0.31em);
+    border:0.12em solid blueviolet;
+    transform: translate(-50%);
+    top:53%;
+    left:calc(50% + 7em);
+}
+.pin2{
+    position:absolute;
+    border-radius: 10px;
+    height: 1.25em;
+    width:1em;
+    background: linear-gradient(yellow 0.31em, green 0.31em);
+    border:0.12em solid blueviolet;
+    transform: translate(-50%);
+    top:43%;
+    left:calc(50% + -7em);
+}
+.pin3{
+    position:absolute;
+    border-radius: 10px;
+    height: 1.25em;
+    width:1em;
+    background: linear-gradient(yellow 0.31em, green 0.31em);
+    border:0.12em solid blueviolet;
+    transform: translate(-50%);
+    top:53%;
+    left:calc(50% + -7em);
+}
+
+img{
+    height: 11.6em;
+    padding-bottom: 0.3em;
+}
+.hand{
+    position: absolute;
+    margin:auto;
+    left: 0;
+    right: 0;
+    background-color: black;
+    border-radius: 0.31em;
+    transform-origin:bottom;
+}
+.hour{
+    height: 2.5em;
+    width:0.31em;
+    top:3.12em;
+}
+.minute{
+    height:3.5em ;
+    width: 0.31em;
+    top:2.12em;
+}
+.second{
+    height: 4.5em;
+    width:0.20em;
+    top:1.12em;
+    background-color:brown;
+}
+.fast{
+    top: 49px;
+    position: absolute;
+    margin:auto;
+    left: 60;
+    right: 0;
+    transform-origin: bottom;
+}
